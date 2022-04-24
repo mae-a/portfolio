@@ -4,8 +4,60 @@
     font-family: Verdana, Geneva, Tahoma, monospace;
 }
 
+body {
+    background-color: #0b3954;
+    color: #bfd7ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: #ff5a5f;
+    color: #c81d25;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: auto;
+    border-bottom: 1px black solid;
+}
+
+@media (min-width: 28.75em) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin: 0 1rem;
+    }
+
+}
+
+#project-div {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+img {
+    width: 300px;
+    height: auto;
 }
